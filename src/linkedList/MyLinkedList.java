@@ -43,7 +43,6 @@ public class MyLinkedList {
     public void remove(int index) {
         Node leader = this.traverseToIndex(index - 1);
         Node unwantedNode = leader.next;
-        Node holdingPointer = unwantedNode.next;
         leader.next = unwantedNode.next;
         this.length--;
         this.printList();
@@ -78,7 +77,7 @@ public class MyLinkedList {
                 '}';
     }
 
-    class Node {
+    static class Node {
         Object value;
         Node next;
 
