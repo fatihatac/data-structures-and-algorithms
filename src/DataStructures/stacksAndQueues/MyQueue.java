@@ -1,4 +1,4 @@
-package stacksAndQueues;
+package DataStructures.stacksAndQueues;
 
 public class MyQueue {
     Node first;

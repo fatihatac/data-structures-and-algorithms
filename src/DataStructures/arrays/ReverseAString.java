@@ -1,4 +1,4 @@
-package arrays;
+package DataStructures.arrays;
 
 
 public class ReverseAString {
@@ -11,18 +11,19 @@ public class ReverseAString {
     }
 
 
-    public static String reverse(String str){
-        if (str == null || str.length() < 2){
+    public static String reverse(String str) {
+        if (str == null || str.length() < 2) {
             return "That is bad !";
         }
         int length = str.length();
         String reversedString = "";
-        for (int i = length-1; i >= 0; i--) {
-            reversedString+=str.charAt(i);
+        for (int i = length - 1; i >= 0; i--) {
+            reversedString += str.charAt(i);
         }
         return reversedString;
     }
-    public static String reverseBuiltIn(String str){
+
+    public static String reverseBuiltIn(String str) {
         return new StringBuilder(str).reverse().toString();
     }
 }
